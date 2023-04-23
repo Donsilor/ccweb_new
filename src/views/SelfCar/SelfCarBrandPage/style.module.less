@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 0 0 auto;
+  min-width: 350px;
+  border: 1px solid #ececec;
+  margin-right: -1px;
+}
+
+.titleWrapper {
+  background-color: #62be69;
+  position: relative;
+  height: 40px;
+}
+
+.title {
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.contentWrapper {
+  padding: 20px 50px;
+}
+
+.cell {
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 10px;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  &.active {
+    color: #62be69;
+  }
+  &:hover {
+    color: #62be69;
+  }
+}
+
+.newBtn {
+  // color: #62be69;
+  position: relative;
+  left: -4px;
+  cursor: pointer;
+}
+
+.cellWrapper {
+  cursor: pointer;
+  position: relative;
+  padding-right: 15px;
+}
+.delBtn {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+}

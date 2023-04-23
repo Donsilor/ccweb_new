@@ -1,0 +1,39 @@
+.carAuditPhoto {
+  display: flex;
+  & > div {
+    margin-right: 80px;
+  }
+  .img,
+  .video {
+    width: 350px;
+    height: 250px;
+  }
+}
+.collectTit {
+  border-bottom: 1px solid rgb(232, 232, 232);
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 10px;
+  margin: 15px 0;
+}
+.form {
+  position: relative;
+  .selList {
+    :global {
+      .ant-list-item {
+        &:hover {
+          background: #eee;
+          cursor: pointer;
+        }
+      }
+    }
+    max-height: 300px;
+    width: 235px;
+    overflow: auto;
+    position: absolute;
+    top: 37px;
+    left: 157px;
+    z-index: 1000;
+    background: #fff;
+  }
+}

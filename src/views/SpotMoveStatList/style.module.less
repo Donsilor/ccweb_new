@@ -1,0 +1,95 @@
+.container {
+  // width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 10;
+}
+.column {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.titleColumn {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.columnBg {
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #ccd9ed;
+  border-radius: 20px;
+}
+
+.content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 10;
+}
+
+.levelInner {
+  display: flex;
+}
+
+.levelWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.cell {
+  width: 100%;
+  min-height: 40px;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 4px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.regular {
+  background-color: #5192cd;
+}
+
+.warn {
+  background-color: #ff3322;
+}
+
+.point {
+  width: 1px;
+  height: 1px;
+}
+
+.pointLeft {
+  position: relative;
+}
+
+.pointRight {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+}

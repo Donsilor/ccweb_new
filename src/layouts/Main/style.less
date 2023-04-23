@@ -1,0 +1,35 @@
+.ant-table-thead > tr {
+  th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    white-space: nowrap;
+  }
+}
+
+.ant-table-tbody > tr {
+  td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    &.wrap {
+      white-space: normal;
+    }
+  }
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.content {
+  margin: 20px 20px;
+  outline: none;
+}

@@ -1,0 +1,35 @@
+.header {
+  height: 64px;
+  width: 100%;
+  padding: 0px 60px 0px 0px;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 10;
+}
+
+.headerWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.icon {
+  font-size: 20px;
+  line-height: 64px !important;
+  cursor: pointer;
+  padding: 0 24px;
+  margin: 0 0 0 12px;
+  &.trigger {
+    transition: all 0.3s, padding 0s;
+    margin-left: 0;
+    &:hover {
+      background-color: rgb(230, 247, 255);
+    }
+  }
+}
+
+.userName {
+  font-size: 16px;
+  line-height: 64px !important;
+  cursor: pointer;
+  padding: 0 12px;
+}

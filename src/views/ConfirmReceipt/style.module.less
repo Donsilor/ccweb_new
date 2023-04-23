@@ -1,0 +1,47 @@
+.printManagement {
+  background-color: white;
+  padding: 20px;
+  min-height: 450px;
+}
+.formArea {
+  button {
+    margin-right: 8px;
+  }
+}
+
+.operArea {
+  margin-bottom: 20px;
+  button {
+    margin-right: 16px;
+  }
+}
+.messageArea {
+  margin-bottom: 20px;
+}
+.wrapper {
+}
+
+.operButton {
+  text-decoration: none !important;
+}
+.amountModal {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  & > div {
+    margin-right: 10px;
+  }
+  & > div:last-child {
+    :global {
+      .ant-form-item-children {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .dynamic-delete-button {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

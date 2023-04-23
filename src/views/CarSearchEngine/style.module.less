@@ -1,0 +1,57 @@
+.searchArea {
+  position: absolute;
+  height: 80px;
+  top: 140px;
+  right: calc(50% - 100px);
+  transform: scale(1);
+  &.transforming {
+    top: -10px;
+    right: 200px;
+    transform: scale(0.8);
+    animation: jumpToResult 0.4s;
+  }
+  &.transformed {
+    top: -10px;
+    right: 200px;
+    transform: scale(0.8);
+  }
+}
+
+.searchButton {
+  position: relative;
+}
+
+.errMsg {
+  margin-bottom: 0;
+  margin-top: 4px;
+  color: red;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+.clearAll {
+  display: inline-block;
+  width: 100%;
+}
+
+@keyframes jumpToResult {
+  from {
+    top: 140px;
+    right: calc(50% - 100px);
+    transform: scale(1);
+  }
+  to {
+    top: -10px;
+    right: 200px;
+    transform: scale(0.8);
+  }
+}
+@keyframes inputAnimation {
+  from {
+    width: 450px;
+  }
+  to {
+    width: 350px;
+  }
+}

@@ -1,0 +1,21 @@
+.form {
+  position: relative;
+  .selList {
+    :global {
+      .ant-list-item {
+        &:hover {
+          background: #eee;
+          cursor: pointer;
+        }
+      }
+    }
+    max-height: 300px;
+    width: 235px;
+    overflow: auto;
+    position: absolute;
+    top: 37px;
+    left: 157px;
+    z-index: 1000;
+    background: #fff;
+  }
+}

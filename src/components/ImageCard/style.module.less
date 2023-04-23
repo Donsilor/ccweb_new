@@ -1,0 +1,82 @@
+.imageCard {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.carAuditPhoto {
+  .imageCard {
+    border-width: 0;
+    margin-top: 0;
+  }
+  :global {
+    .ant-tabs-bar {
+      margin-bottom: 0;
+    }
+    .ant-tabs-card-content {
+      border: 1px solid #e8e8e8;
+      border-top: none;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &:not(.disabled) > div {
+    &:hover .preview::before {
+      opacity: 1;
+    }
+  }
+  .preview {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  &.disabled .preview {
+    cursor: auto;
+  }
+  .preview::before {
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    outline: none;
+  }
+}
+
+.content {
+  padding: 20px;
+  // height: 240px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+}

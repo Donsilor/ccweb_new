@@ -1,0 +1,37 @@
+.conBar {
+  background: #ffffff;
+  .conflex {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    & > div {
+      width: 30%;
+    }
+  }
+  .radioGroup {
+    label {
+      display: block;
+    }
+  }
+  .conitem {
+    border: 1px solid;
+    padding: 20px 25px;
+    padding-right: 0;
+    height: 400px;
+    .tit {
+      width: 130px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    & > div:first-child {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .outFlex {
+      display: block;
+      textarea {
+        width: 200px;
+      }
+    }
+  }
+}

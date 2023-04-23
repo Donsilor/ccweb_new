@@ -1,0 +1,72 @@
+{
+  "name": "ccweb_new",
+  "private": true,
+  "homepage": "http://sit.e-chaku.com/ccweb_new",
+  "proxy": "http://uat.e-chaku.com",
+  "scripts": {
+    "start": "env-cmd .env react-app-rewired start --no-cache",
+    "build": "npx react-app-rewired build",
+    "publish": "npm run publish:dev",
+    "publish:dev": "npm run build && zsh shells/build-dev.sh",
+    "publish:uat": "npm run build && zsh shells/build-uat.sh",
+    "publish:sit": "npm run build && zsh shells/build-sit.sh",
+    "publish:monitor": "npm run build && zsh shells/build-monitor.sh",
+    "publish:prod": "npm run build && zsh shells/build-prod.sh",
+    "test": "env-cmd .env react-app-rewired test"
+  },
+  "dependencies": {
+    "ant-design-pro": "^2.1.1",
+    "antd": "^3.24.3",
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.11.0",
+    "bignumber.js": "^8.0.2",
+    "echarts": "4.5.0",
+    "echarts-for-react": "2.0.15-beta.1",
+    "env-cmd": "^8.0.2",
+    "file-saver": "^2.0.0",
+    "jspdf": "^1.5.3",
+    "lodash": "^4.17.11",
+    "md5": "^2.2.1",
+    "moment": "^2.22.2",
+    "ramda": "^0.25.0",
+    "react": "^16.6.0",
+    "react-app-rewire-less-modules": "^1.3.0",
+    "react-app-rewired": "^1.6.2",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.1.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "react-transition-group": "^2.5.2",
+    "react-viewer": "^2.8.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.3",
+    "redux-promise": "^0.6.0",
+    "xlsx": "0.15.1",
+    "rc-viewer": "^0.0.9"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/helper-create-regexp-features-plugin": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/polyfill": "^7.4.4",
+    "babel-eslint": "9.0.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "eslint": "5.6.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6"
+  }
+}

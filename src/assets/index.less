@@ -1,0 +1,43 @@
+/*
+ * @Author zhangjunjie
+ * @File index.less
+ * @Created Date 2018-07-06 14-40
+ * @Last Modified: 2018-07-06 14-40
+ * @Modified By: zhangjunjie
+ */
+
+.wrapper {
+  main {
+    margin-top: 30px;
+    &>section {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+      &:nth-child(2) {
+        max-width: 100%;
+        overflow: auto;
+      }
+    }
+  }
+
+  #breadcrumb {
+    position: relative;
+    height: 21px;
+    .portal {
+      position: absolute;
+      bottom: 1px;
+      right: 0;
+    }
+  }
+}
+
+
+#copyright {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 295px;
+  position: relative;
+  left: 0;
+  bottom: 5px;
+}
